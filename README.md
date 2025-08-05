@@ -81,13 +81,6 @@ N	P	K	Temperature	 Humidity	pH	  Rainfall
 
 → Predicted Crop: rice
 
-🔐 Login Page
-![App Screenshot](static/login-page.png)
-
-🖼️ Screenshots
-![App Screenshot](static/home-page.png)
-
-
 📚 Dataset Reference
 This project uses the public Crop Recommendation Dataset from Kaggle.
 
