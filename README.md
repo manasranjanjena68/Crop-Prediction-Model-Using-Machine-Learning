@@ -27,15 +27,14 @@ Welcome to the **Crop Prediction Web App** — a Flask-powered machine learning 
 ## 📂 Project Structure
 
 CropPredictionModel/
-│
 ├── static/ # CSS & Images
 │ ├── index.css
-│ └── farmers.png
-│
+│ ├── farmers.png
+│ ├── login-page.png
+│ └── home-page.png
 ├── templates/ # HTML Templates
 │ ├── index.html
 │ └── login.html
-│
 ├── main.py # Flask application
 ├── crop_prediction_model.py # ML model script
 ├── Crop_recommendation.csv # Dataset
@@ -54,27 +53,30 @@ CropPredictionModel/
 
 
 
----
+📦 Installation & Usage
 
-## 📦 Installation & Usage
 
-### 1. Clone the Repository
-```bash
+🔧 1. Clone the Repository
+
 git clone https://github.com/manasranjanjena68/CropPredictionModel.git
 cd CropPredictionModel
 
-
-Install Requirements
+📦 2. Install Requirements
 
 pip install -r requirements.txt
 
-Run the Application
+
+🚀 3. Run the Application
 
 python main.py
 
-Open in Browser
+
+🌐 4. Open in Browser
+
+Visit:
 
 http://127.0.0.1:5000/
+
 
 🧪 Example Input
 N	P	K	Temperature	 Humidity	pH	  Rainfall
