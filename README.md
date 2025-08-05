@@ -57,21 +57,21 @@ CropPredictionModel/
 
 ### 🔧 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/manasranjanjena68/CropPredictionModel.git
 cd CropPredictionModel
 
-📦 2. Install Requirements
+### 📦 2. Install Requirements
 
 pip install -r requirements.txt
 
 
-🚀 3. Run the Application
+### 🚀 3. Run the Application
 
 python main.py
 
 
-🌐 4. Open in Browser
+### 🌐 4. Open in Browser
 
 Visit:
 
