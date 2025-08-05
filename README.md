@@ -43,11 +43,14 @@ CropPredictionModel/
 └── README.md # Project description
 
 
-🔐 Login Page
-./static/image-name.png
+## 🖼️ Screenshots
 
-🖼️ Screenshots
-./static/home-page.png
+### 🔐 Login Page
+![Login Page](./static/login-page.png)
+
+### 🏡 Home Page
+![Home Page](./static/home-page.png)
+
 
 
 ---
