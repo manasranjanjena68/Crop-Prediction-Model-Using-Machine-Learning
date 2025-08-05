@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+
+    {% if 'user' not in session %}
+    <script>
+        window.location.href = "/login";
+    </script>
+    {% endif %}
+
+    <h1>Welcome, {{ session['user'] }}!</h1>
+
+    <h2>Crop Prediction System</h2>
+    <form id="prediction-form">
+        <input type="number" id="N" placeholder="Nitrogen" required>
+        <input type="number" id="P" placeholder="Phosphorus" required>
+        <input type="number" id="K" placeholder="Potassium" required>
+        <input type="number" id="temperature" placeholder="Temperature" required>
+        <input type="number" id="humidity" placeholder="Humidity" required>
+        <input type="number" id="ph" placeholder="pH" required>
+        <input type="number" id="rainfall" placeholder="Rainfall" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    <p id="result"></p>
+
+    <!-- Animated butterflies -->
+    <div class="butterfly butterfly1"></div>
+    <div class="butterfly butterfly2"></div>
+    <div class="butterfly butterfly3"></div>
+
+    <br>
+
+    <a href="/logout" class="logout-btn">Logout</a> <!-- Moved Logout to the bottom -->
+
+    <script>
+        document.getElementById("prediction-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let data = {
+                N: document.getElementById("N").value,
+                P: document.getElementById("P").value,
+                K: document.getElementById("K").value,
+                temperature: document.getElementById("temperature").value,
+                humidity: document.getElementById("humidity").value,
+                ph: document.getElementById("ph").value,
+                rainfall: document.getElementById("rainfall").value
+            };
+
+            fetch("/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerText = "Recommended Crop: " + data.prediction;
+                });
+        });
+    </script>
+
+</body>
+
+</html>

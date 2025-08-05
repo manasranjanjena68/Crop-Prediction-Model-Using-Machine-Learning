@@ -1,0 +1,115 @@
+/* Background with soft lighting animation */
+body {
+    background: linear-gradient(to bottom, #87CEFA, #e0f7fa);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated glowing effect */
+@keyframes glowing {
+    0% {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Soft lighting animation on background */
+.light-effect {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: glowing 3s infinite alternate;
+}
+
+/* Positioning multiple light sources */
+.light1 {
+    top: 20%;
+    left: 10%;
+    animation-duration: 5s;
+}
+
+.light2 {
+    top: 50%;
+    right: 15%;
+    animation-duration: 6s;
+}
+
+.light3 {
+    bottom: 20%;
+    left: 50%;
+    animation-duration: 7s;
+}
+
+h1 {
+    color: #2E8B57;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+input {
+    display: block;
+    width: 300px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Glowing button effect */
+@keyframes button-glow {
+    0% {
+        box-shadow: 0 0 5px #2E8B57;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #3CB371;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #2E8B57;
+    }
+}
+
+button {
+    background: #2E8B57;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    animation: button-glow 2s infinite alternate;
+}
+
+button:hover {
+    background: #3CB371;
+}
