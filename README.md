@@ -43,6 +43,12 @@ CropPredictionModel/
 └── README.md # Project description
 
 
+🔐 Login Page
+static/login-page.png
+
+🖼️ Screenshots
+static/home-page.png
+
 
 ---
 
@@ -77,9 +83,6 @@ N	P	K	Temperature	 Humidity	pH	  Rainfall
 
 🖼️ Screenshots
 ![App Screenshot](static/home-page.png)
-
-
-
 
 
 📚 Dataset Reference
