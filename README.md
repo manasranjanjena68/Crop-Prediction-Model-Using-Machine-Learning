@@ -78,19 +78,22 @@ Visit:
 http://127.0.0.1:5000/
 
 
-🧪 Example Input
-N	P	K	Temperature	 Humidity	pH	  Rainfall
-90	42	43	20.8°C	     82.0%	   6.5	   202.9 mm
+## 🧪 Example Input
+N	 P	   K	  Temperature	 Humidity	pH	    Rainfall
+90	 42	43	  20.8°C	       82.0%	   6.5	 202.9 mm
 
 → Predicted Crop: rice
 
+
 📚 Dataset Reference
 This project uses the public Crop Recommendation Dataset from Kaggle.
+
 
 🙌 Author
 👨‍💻 Manas Ranjan Jena
 🔗 GitHub | LinkedIn
 📧 manasranjanjena68@gmail.com
+
  
 🌟 Support
 If you found this project helpful, please ⭐ star the repo to support my work.
