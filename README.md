@@ -44,10 +44,10 @@ CropPredictionModel/
 
 
 🔐 Login Page
-static/login-page.png
+./static/image-name.png
 
 🖼️ Screenshots
-static/home-page.png
+./static/home-page.png
 
 
 ---
