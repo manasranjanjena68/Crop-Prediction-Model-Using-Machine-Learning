@@ -51,13 +51,13 @@ CropPredictionModel/
 ### 🏡 Home Page
 ![Home Page](./static/home-page.png)
 
+---
 
+## 📦 Installation & Usage
 
-📦 Installation & Usage
+### 🔧 1. Clone the Repository
 
-
-🔧 1. Clone the Repository
-
+```bash
 git clone https://github.com/manasranjanjena68/CropPredictionModel.git
 cd CropPredictionModel
 
@@ -79,14 +79,15 @@ http://127.0.0.1:5000/
 
 
 ## 🧪 Example Input
-N	 P	   K	  Temperature	 Humidity	pH	    Rainfall
-90	 42	43	  20.8°C	       82.0%	   6.5	 202.9 mm
+N     P     K     Temperature     Humidity     pH     Rainfall
+90    42    43    20.8°C          82.0%        6.5    202.9 mm
+
 
 → Predicted Crop: rice
 
 
 📚 Dataset Reference
-This project uses the public Crop Recommendation Dataset from Kaggle.
+Public dataset from Kaggle - Crop Recommendation
 
 
 🙌 Author
