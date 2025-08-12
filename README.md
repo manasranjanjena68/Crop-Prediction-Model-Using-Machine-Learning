@@ -115,7 +115,4 @@ If you found this project helpful, please ⭐ star the repo to support my work.
 
 ---
 
-Let me know if you want help creating the second screenshot (`home.png`) or need a banner for your GitHub repo.
-
----
 
