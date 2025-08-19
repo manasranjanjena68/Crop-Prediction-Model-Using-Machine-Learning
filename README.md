@@ -2,7 +2,7 @@
 
 Welcome to the **Crop Prediction Web App** — a Flask-powered machine learning project that predicts the most suitable crop based on various soil and climate conditions like Nitrogen, Phosphorus, Potassium (NPK), temperature, humidity, pH, and rainfall.
 
----
+---  
 
 ## 🧠 Features   
 
