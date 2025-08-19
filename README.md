@@ -5,7 +5,7 @@ Welcome to the **Crop Prediction Web App** — a Flask-powered machine learning 
 ---  
     
 ## 🧠 Features     
-
+  
 - 🔐 Simple login system    
 - 🧾 Easy-to-use input form
 - 📈 Machine learning model (Random Forest Classifier)
